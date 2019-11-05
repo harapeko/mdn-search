@@ -57,7 +57,7 @@
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>keyword</key>
-				<string>mdn</string>
+				<string>m</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -73,7 +73,7 @@
 				<key>subtext</key>
 				<string>ex: mdn addEventListener</string>
 				<key>title</key>
-				<string>mdn {search}</string>
+				<string>m {search}</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>

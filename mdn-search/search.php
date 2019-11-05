@@ -1,6 +1,6 @@
 <?php
-$baseURL = 'https://developer.mozilla.org/en-US/docs/';
-$apiURL = 'https://developer.mozilla.org/api/v1/search/en-US?q=';
+$baseURL = 'https://developer.mozilla.org/ja/docs/';
+$apiURL = 'https://developer.mozilla.org/api/v1/search/ja?locale=ja&q=';
 
 $query = $argv[1];
 $results = array();
