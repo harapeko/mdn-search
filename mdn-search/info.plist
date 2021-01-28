@@ -5,7 +5,7 @@
 	<key>bundleid</key>
 	<string>com.gilbarbara.mdn-search</string>
 	<key>category</key>
-	<string>Developer</string>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>B8068536-AE17-4368-AB7E-9AB402E79AAB</key>
@@ -110,8 +110,8 @@ https://developer.mozilla.org/
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
-	<string>https://github.com/gilbarbara/alfred-workflows/tree/master/mdn-search</string>
+	<string>https://github.com/harapeko/mdn-search/tree/master/mdn-search</string>
 </dict>
 </plist>

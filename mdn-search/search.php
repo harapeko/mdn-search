@@ -1,6 +1,6 @@
 <?php
-$baseURL = 'https://developer.mozilla.org/ja/docs/';
-$apiURL = 'https://developer.mozilla.org/api/v1/search/ja?locale=ja&q=';
+$baseURL = 'https://developer.mozilla.org';
+$apiURL = 'https://developer.mozilla.org/api/v1/search?locale=ja&q=';
 
 $query = $argv[1];
 $results = array();
@@ -64,13 +64,13 @@ $data = json_decode($output);
 
 $results = array();
 
-if (!empty($data) && $data->count > 0) {
+if (!empty($data) && $data->metadata->size > 0) {
     foreach ($data->documents as $d):
         $results[] = array(
             'uid' => $d->slug,
             'title' => $d->title,
-            'subtitle' => strip_tags($d->excerpt),
-            'arg' => $baseURL . $d->slug,
+            'subtitle' => strip_tags($d->highlight->body[0]),
+            'arg' => $baseURL . $d->mdn_url,
             'icon' => 'icon.png',
             'valid' => 'yes'
         );
