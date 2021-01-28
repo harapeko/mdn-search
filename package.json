@@ -1,16 +1,21 @@
 {
-  "name": "alfred-workflows",
+  "name": "mdn-Search",
   "description": "Workflow for Alfred",
-  "version": "1.0.0",
-  "homepage": "https://github.com/gilbarbara/alfred-workflows",
+  "version": "1.2.0",
+  "homepage": "https://github.com/harapeko/mdn-search",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gilbarbara/alfred-workflows.git"
+    "url": "https://github.com/harapeko/mdn-search.git"
   },
   "author": {
     "name": "Gil Barbara",
     "email": "gilbarbara@gmail.com",
     "url": "https://github.com/gilbarbara"
+  },
+  "maintainers": {
+    "name": "harapeko",
+    "email": "github@harapeko.dev",
+    "url": "https://github.com/harapeko"
   },
   "license": "MIT",
   "devDependencies": {
@@ -20,11 +25,7 @@
     "gulp-zip": "^5.0"
   },
   "scripts": {
-    "build:bundlephobia": "gulp -f bundlephobia/gulpfile.js",
-    "build:cpf-cnpj-generator": "gulp -f cpf-cnpj-generator/gulpfile.js",
-    "build:crashplan-control": "gulp -f crashplan-control/gulpfile.js",
-    "build:genpass": "gulp -f genpass/gulpfile.js",
     "build:mdn-search": "gulp -f mdn-search/gulpfile.js",
-    "build": "npm run build:bundlephobia && npm run build:cpf-cnpj-generator && npm run build:crashplan-control && npm run build:genpass && npm run build:mdn-search"
+    "build": "npm run build:mdn-search"
   }
 }
